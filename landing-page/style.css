@@ -1,0 +1,492 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+:root{
+    --bg-color: #fff;
+    --text-color: #000;
+    --main-color: #FF5555;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.navbar a.active{
+    color: var(--main-color);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    background-color: var(--text-color);
+    padding: 15px 32px;
+    border-radius: 10px;
+    color: var(--bg-color);
+    font-size: 28px;
+    font-weight: 500;
+    transition: all .50s ease;
+    display: inline-block;
+}
+
+.main a:hover{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.heading{
+    font-size: 3em;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.infoContainer{
+    position: relative;
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+    transition: all .50s ease;
+}
+
+.Info{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infoimage{
+    height: 58vh;
+    position: relative;
+}
+.bg-image{
+    position: absolute;
+    left: 250px;
+}
+.child-img1{
+    position: absolute;
+    top: 83%;
+    left: -10%;
+    width: 670px;
+}
+
+.parent{
+    width: 724px;
+    left: 123px;
+}
+.child-image1{
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    width: 670px;
+}
+.child-image2{
+    position: absolute;
+    top: -5%;
+    left: -15%;
+    width: 670px;
+}
+
+.firstline{
+    font-size: 4em;
+    font-weight: bold;
+}
+.secondline{
+    font-size: 4em;
+    font-weight: bold;
+}
+.more{
+    font-size: 2em;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 23px;
+    padding: 30px;
+}
+
+.inner{
+    display: flex;
+    padding: 11px;
+    margin: 1px;
+}
+.buttons a{
+    margin-right: 25px;
+    margin-left: 10px;
+    background-color: var(--text-color);
+    padding: 15px 32px;
+    border-radius: 10px;
+    color: var(--bg-color);
+    font-size: 28px;
+    font-weight: 500;
+    transition: all .50s ease;
+    display: inline-block;
+}
+.play{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color);
+    padding: 15px 32px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    transition: all .50s ease;
+    display: inline-block;
+    text-align: justify;
+}
+
+.page2image{
+    /* padding: 279px; */
+    transition: all .50s ease;
+    position: absolute;
+    top: 1200px;
+    width: 995px;
+    left: 110px;
+}
+
+.child-img{
+    position: absolute;
+    top: 123%;
+    left: 3%;
+    width: 670px;
+}
+
+.container3{
+    position: absolute;
+    left: 1082px;
+    top: 1376px;
+    font-size: 28px;
+    transition: all .50s ease;
+}
+.budgeting{
+    display: flex;
+    gap: 1em;
+    padding: 20px;
+}
+.describe{
+    padding: 25px;
+}
+.child-img2{
+    left: 900px;
+}
+.container4{
+    position: absolute;
+    left: 300px;
+    top: 2319px;
+    font-size: 28px;
+    transition: all .50s ease;
+}
+.clever{
+    display: flex;
+    gap: 1em;
+    padding: 20px;
+}
+.one{
+    width: 45%;
+}
+.container4{
+    display: grid;
+    justify-content: space-evenly;
+}
+.choose{
+    position: absolute;
+    top: -250px;
+    left: 42%;
+    width: 1057px;
+}
+.hold{
+    position: absolute;
+    top: 51%;
+    left: 66%;
+    width: 357px;
+}
+
+.container5{
+    font-size: 28px;
+    transition: all .50s ease;
+}
+.fully{
+    position: absolute;
+    top: 284%;
+    left: 3%;
+    width: 1057px;
+}
+.child-img3{
+    position: absolute;
+    top: 3200px;
+    left: 286px;
+    width: 1000px;
+}
+
+.customized{
+    display: flex;
+    gap: 1em;
+    padding: 20px;
+}
+.container6{
+    position: absolute;
+    left: 1100px;
+    top: 3300px;
+    font-size: 28px;
+    transition: all .50s ease;
+    justify-content: space-evenly;
+    width: 45%;
+}
+.users{
+    position: relative;
+    text-align: center;
+    top: 3100px;
+    font-size: 28px;
+    transition: all .50s ease;
+}
+.why{
+    display: flex;
+    position: relative;
+    top: 3100px;
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding: 20px;
+}
+.pic{
+    position: relative;
+    left: 254px;
+    width: 831px;
+}
+.child-img4{
+    position: absolute;
+    top: 28px;
+    left: 248px;
+    width: 1000px;
+}
+.font{
+    position: relative;
+    padding: 121px;
+}
+.faqs{
+    position: relative;
+    top: 3300px;
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding: 20px;
+    transition: all .50s ease;
+    left: 230px;
+    width: 1910px;
+
+}
+.cont{
+    padding: 20px;
+    margin: 20px;
+}
+.cont-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+}
+.cont1{
+    width: 50;
+    padding: 30px;
+}
+.ready{
+    width: 80%;
+    top: 1083px;
+    position: absolute;
+    left: 89px;
+}
+.child-img5{
+    position: absolute;
+    top: 700px;
+    left: -300px;
+    width: 1000px;
+}
+.footer{
+    padding: 20px;
+    display: flex;
+    gap: 6em;
+    position: relative;
+    top: 1050px;
+    left: 45px;
+}
+.logo1{
+    padding: 10px;
+    width: 180px;
+}
+.mess{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 0.5em;
+    font-size: 18px;
+}
+.phone{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 0.5em;
+    font-size: 18px;
+}
+.line22{
+    font-weight: bold;
+    font-size: 40px;
+}
+.line23{
+    font-size: 18px;
+    padding: 10px;
+}
+.line33{
+    font-weight: bold;
+    font-size: 40px;
+}
+.line32{
+    font-size: 18px;
+    padding: 10px;
+}
+.line44{
+    font-weight: bold;
+    font-size: 40px;
+}
+.line42{
+    font-size: 18px;
+    padding: 10px;
+}
+.line55{
+    font-weight: bold;
+    font-size: 40px;
+}
+.line52{
+    font-size: 18px;
+    padding: 10px;
+}
+.btns{
+    padding: 20px;
+    display: flex;
+    gap: auto;
+    position: absolute;
+    top: 2097px;
+    left: 1157px;
+    font-size: 28px;
+}
+.btn1{
+    color: grey;
+    padding: 15px 32px;
+}
+.btn2{
+    background-color: var(--text-color);
+    padding: 15px 32px;
+    border-radius: 10px;
+    color: var(--bg-color);
+    font-size: 28px;
+    font-weight: 500;
+    transition: all .50s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+.copyrightText{
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 100px 30px;
+    text-align: center;
+    transition: all .50s ease;
+    top: 2097px;
+    left: 1157px;
+}
+
+@media (max-width:1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: blcok;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+        transform: translate(5px);
+    }
+    .navbar a.active{
+        color: var(--text-color);
+    }
+    .navbar.open{
+        right: 2%;
+    }
+
+}
